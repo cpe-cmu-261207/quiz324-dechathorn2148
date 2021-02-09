@@ -1,6 +1,7 @@
 //a component for rendering person table
 
 export default function ItemTable(props) {
+  const pet = props;
   return (
     <div>
       <table className="table is-bordered mb-3">
@@ -11,9 +12,9 @@ export default function ItemTable(props) {
             <th>Age</th>
           </tr>
           <tr>
-            <td>{props.name}</td>
-            <td>{props.gender}</td>
-            <td>{props.age}</td>
+            <td>{pet.name}</td>
+            <td>{pet.gender}</td>
+            <td>{pet.age}</td>
           </tr>
         </tbody>
       </table>
